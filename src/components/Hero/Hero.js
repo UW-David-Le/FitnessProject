@@ -1,6 +1,6 @@
-
+import "./Hero.scss";
 export default function Hero () {
     return ( 
-     <div> Hello world!</div>
+     <div className="div">hello</div>
     )
  }

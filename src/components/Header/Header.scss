@@ -1,2 +1,49 @@
+* {
+  color: #2a2d34;
+}
+header {
+  background-color: #d1dede;
+  display: flex;
+  flex-direction: row;
+  height: 3rem rem;
+  padding: 1rem;
+  align-items: center;
+}
 
+.header__logoImg {
+  width: 2rem;
+  height: 2rem;
+}
+.header__title{
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 0 5rem;
+    width: 100%;
+}
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  width: 90%;
+  justify-content: flex-end;
+  gap: 3rem;
+  padding-right: 1rem;
+}
 
+.header__navBtn {
+  background-color: #d1dede;
+  border: 2px solid black;
+  border-radius: 5px;
+  box-shadow: none;
+  height: 2rem;
+  width: 6.2rem;
+  cursor: pointer;
+  content: attr(Exercise);
+  &:hover {
+    border-color: #8C1508;
+  }
+}
+
+li {
+  list-style-type: none;
+}

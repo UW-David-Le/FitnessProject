@@ -1,14 +1,16 @@
-import React from 'react';
-import HomePage from '../HomePage/HomePage';
-import './DifficultyCard.scss';
-import { Link } from 'react-router-dom';
-import Beginner from '../../assets/beginner.avif';
-import Intermediate from '../../assets/intermediate.avif';
-import Advanced from '../../assets/advanced.png';
-import Card from '../../components/Card/Card';
+import React from "react";
+import "./DifficultyCard.scss";
+import { Link } from "react-router-dom";
+import Beginner from "../../assets/beginner.avif";
+import Intermediate from "../../assets/intermediate.avif";
+import Advanced from "../../assets/advanced.png";
+import Header from "../../components/Header/Header.js";
+import Card from "../../components/Card/Card";
 
 const DifficultyCard = () => {
   return (
+    <>
+    <Header /> 
     <Link to = "/home" className="link-class">
        <h1> Choose your monkey: </h1>
     <div className="cards">
@@ -29,6 +31,7 @@ const DifficultyCard = () => {
         />
     </div>
     </Link>
+    </>
   );
 };
 
