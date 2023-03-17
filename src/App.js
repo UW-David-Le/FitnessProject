@@ -11,6 +11,10 @@ export default function App() {
        <Routes>
         <Route path="/" element={<DifficultyCard/>}/>
         <Route path="home" element={<HomePage/>}/>
+        {/* <Route path="chest" element={<Chest/>}/>
+        <Route path="legs" element={<Legs/>}/>
+        <Route path="arms" element={<Arms/>}/>
+        <Route path="traps" element={<Traps/>}/> */}
       </Routes>
     </BrowserRouter> 
   );
