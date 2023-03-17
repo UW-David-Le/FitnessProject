@@ -2,6 +2,7 @@ import './App.scss';
 import DifficultyCard from './pages/DifficultyCard/DifficultyCard.js';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from './pages/HomePage/HomePage';
+import ExerciseCard from './pages/ExerciseCard/ExerciseCard';
 
 
 export default function App() {
@@ -11,10 +12,10 @@ export default function App() {
        <Routes>
         <Route path="/" element={<DifficultyCard/>}/>
         <Route path="home" element={<HomePage/>}/>
-        {/* <Route path="chest" element={<Chest/>}/>
-        <Route path="legs" element={<Legs/>}/>
-        <Route path="arms" element={<Arms/>}/>
-        <Route path="traps" element={<Traps/>}/> */}
+        <Route path="/:muscle" element={<ExerciseCard/>}/>
+
+  
+
       </Routes>
     </BrowserRouter> 
   );
