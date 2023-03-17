@@ -1,13 +1,16 @@
-import React from 'react';
-import HomePage from '../HomePage/HomePage';
-import './DifficultyCard.scss';
-import { Link } from 'react-router-dom';
-import Beginner from '../../assets/beginner.avif';
-import Intermediate from '../../assets/intermediate.avif';
-import Advanced from '../../assets/advanced.png';
+import React from "react";
+import HomePage from "../HomePage/HomePage";
+import "./DifficultyCard.scss";
+import { Link } from "react-router-dom";
+import Beginner from "../../assets/beginner.avif";
+import Intermediate from "../../assets/intermediate.avif";
+import Advanced from "../../assets/advanced.png";
+import Header from "../../components/Header/Header.js";
 
 const DifficultyCard = () => {
   return (
+    <>
+    <Header /> 
     <Link to = "/home" className="link-class">
        <h1> Choose your monkey: </h1>
     <div className="cards">
@@ -19,7 +22,7 @@ const DifficultyCard = () => {
         <div className="card-text">
           <h2>Beginner</h2>
           <p> You are brand new to weightlifting and would like to learn
-            fundamental workouts. The exercises are beginnier friendly. 
+            fundamental workouts. The exercises are beginner friendly. 
           </p>
         </div>
         <button className= "card__button">
@@ -54,6 +57,7 @@ const DifficultyCard = () => {
       </div>
     </div>
     </Link>
+    </>
   );
 };
 
