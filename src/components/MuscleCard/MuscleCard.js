@@ -1,5 +1,5 @@
 import "./MuscleCard.scss"
-
+import backgroundImg from"../../assets/rusty-weights-on-a-rack.jpg"
 export default function MuscleCard({ image, title, description }) {
   return (
     <div className="cards">

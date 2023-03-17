@@ -14,6 +14,7 @@
     margin-top: 1rem;
   
     .card {
+      background-color: #FAFAFA;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -74,7 +75,10 @@
         }
       }
     }
-  
+  .card__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+  }
     .card-text {
       width: 100%;
       padding: 20px;
@@ -101,6 +105,7 @@
         margin: 1rem;
         line-height: 1.35rem;
         font-size: 1rem;
+        text-align: justify;
       }
     }
   }

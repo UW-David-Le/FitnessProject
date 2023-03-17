@@ -16,10 +16,10 @@ export default function Header () {
             <div className="header__dropdown">
               <select className="header__navBtn">
                 <option>Exercise</option>
-                <option>quadriceps</option>
-                <option>chest</option>
-                <option>lowerBack</option>
-                <option>trap</option>
+                <option>Quadriceps</option>
+                <option>Chest</option>
+                <option>LowerBack</option>
+                <option>Trap</option>
                 <option>Hamstrings</option>
               </select>
             </div>

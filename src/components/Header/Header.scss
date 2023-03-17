@@ -14,11 +14,11 @@ header {
   width: 2rem;
   height: 2rem;
 }
-.header__title{
-    font-size: 1.25rem;
-    font-weight: 700;
-    padding: 0 5rem;
-    width: 100%;
+.header__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 0 5rem;
+  width: 100%;
 }
 .header__nav {
   display: flex;
@@ -31,6 +31,8 @@ header {
 }
 
 .header__navBtn {
+  font-size: 15px;
+  font-weight: 600;
   background-color: #d1dede;
   border: 2px solid black;
   border-radius: 5px;
@@ -40,7 +42,7 @@ header {
   cursor: pointer;
   content: attr(Exercise);
   &:hover {
-    border-color: #8C1508;
+    border-color: #8c1508;
   }
 }
 

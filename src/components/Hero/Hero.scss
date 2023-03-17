@@ -1,5 +1,55 @@
-.div{
-    color: gainsboro;
-    // color:ghostwhite
-    // color: goldenrod;
+.hero {
+    display: flex;
+    width: 100%;
+  color: gainsboro;
+  
+  // color: goldenrod;
+
+
+&__left{
+    display: flex;
+    width: 30%;
+    color:ghostwhite;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+    justify-content: space-evenly;
 }
+p{
+    text-align: justify;
+    padding: 20px;
+    background-color: lavenderblush;
+    font-size: 1.5625rem;
+    font-weight: 600;
+}
+&__right{
+    width:70%;
+}
+}
+img{
+    height: 60rem;
+    width: 100%;
+}
+
+.hero__button{background-color: #5c8080;
+    border: 2px solid black;
+    border-radius: 1.25rem;
+    box-shadow: none;
+    height: 5rem;
+    width: 13.2rem;
+    font-weight: 600;
+    line-height: 30px;
+    font-size: 1.5625rem;
+    cursor: pointer;
+    content: attr(Exercise);    
+    &:hover {
+      border-color: #8C1508;
+    }
+}
+h1{
+    text-align: center;
+    font-size: 70px;
+    font-weight: 700;
+    color: #F03A47;
+  }
