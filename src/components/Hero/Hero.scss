@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 .hero {
     display: flex;
     width: 100%;
@@ -15,6 +16,17 @@
     justify-content: center;
     background-color: aliceblue;
     justify-content: space-evenly;
+=======
+.hero{
+    color: gainsboro;
+    // color:ghostwhite
+    // color: goldenrod;
+
+&__left{
+    img
+}
+
+>>>>>>> Stashed changes
 }
 p{
     text-align: justify;
