@@ -3,6 +3,7 @@ import Header from '../../components/Header/Header';
 import Hero from '../../components/Hero/Hero';
 import Dropdown from '../../components/DropDown/DropDown';
 import ExerciseCard from '../ExerciseCard/ExerciseCard';
+import Footer from "../../components/Footer/Footer"
 
 export default function HomePage() {
   return (
@@ -11,6 +12,7 @@ export default function HomePage() {
         <Hero/>
         <Dropdown/>
         <ExerciseCard/>
+        <Footer/>
     </>
   );
 }
