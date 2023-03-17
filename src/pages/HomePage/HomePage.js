@@ -11,12 +11,8 @@ export default function HomePage() {
       <Header/>
         <Hero/>
         <Dropdown/>
-<<<<<<< Updated upstream
         <ExerciseCard/>
         <Footer/>
-=======
-
->>>>>>> Stashed changes
     </>
   );
 }

@@ -1,5 +1,4 @@
 import "./Hero.scss";
-<<<<<<< Updated upstream
 import Heroimg from "../../assets/image.png"
 
 export default function Hero () {
@@ -14,16 +13,5 @@ export default function Hero () {
      <img  className="hero__img" src={Heroimg}/>
      </div>
      </div>
-=======
-import Hero from "../../assets/image.png"
-export default function Hero () {
-    return ( 
-     <Hero className="hero">
-     <div className="hero__left"></div>
-     <div className="hero__right">
-     <img  className="hero__img" src={Hero}
-     </div>
-     </Hero>
->>>>>>> Stashed changes
     )
  }
