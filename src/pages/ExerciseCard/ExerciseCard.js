@@ -25,6 +25,40 @@ import Trap8 from "../../assets/Trap/8-Lever-Standing-Calf-Raise-Calf8.gif";
 import Trap9 from "../../assets/Trap/9-Barbell-Shrug9.gif";
 import Trap10 from "../../assets/Trap/10-Behind-The-Back-Barbell-Shrug-Reverse-Barbell-Shrug10.gif";
 
+import Leg1 from "../../assets/Quadriceps/1-Single-Leg-Press.gif"
+import Leg2 from "../../assets/Quadriceps/2-Clean from Blocks2.gif"
+import Leg3 from "../../assets/Quadriceps/3-barbell-full-squat3.gif"
+import Leg4 from "../../assets/Quadriceps/4-Tire flipDV4.gif"
+import Leg5 from "../../assets/Quadriceps/5-Barbell back squat to box5.gif"
+import Leg6 from "../../assets/Quadriceps/6-Push-press 6.gif"
+import Leg7 from "../../assets/Quadriceps/7-Power snatch7.gif"
+import Leg8 from "../../assets/Quadriceps/8-clean-and-jerk8.gif"
+import Leg9 from "../../assets/Quadriceps/9-Reverse Band Box SquatDV9.gif"
+import Leg10 from "../../assets/Quadriceps/10-Jump-Rope10.gif"
+
+import Back1 from "../../assets/lowerBack/1-Atlas Stones.gif"
+import Back2 from "../../assets/lowerBack/2-Barbell deficit deadlift.gif"
+import Back3 from "../../assets/lowerBack/3-Back extension.gif"
+import Back4 from "../../assets/lowerBack/4-Axle Deadlift.gif"
+import Back5 from "../../assets/lowerBack/5-hyperextension.gif"
+import Back6 from "../../assets/lowerBack/6-resistance-band-deadlift.gif"
+import Back7 from "../../assets/lowerBack/7-Deadlift with Bands.gif"
+import Back8 from "../../assets/lowerBack/8-Deadlift with Chains.gif"
+import Back9 from "../../assets/lowerBack/9-Rack Pull with Bands.gif"
+import Back10 from "../../assets/lowerBack/10-Superman-exercise.gif"
+
+import Hamstring1 from "../../assets/Hamstrings/1-Barbell-Deadlift.gif"
+import Hamstring2 from "../../assets/Hamstrings/2-dumbbell-romanian-deadlift.gif"
+import Hamstring3 from "../../assets/Hamstrings/3-Power-Clean.gif"
+import Hamstring4 from "../../assets/Hamstrings/4-sumo-deadlift.gif"
+import Hamstring5 from "../../assets/Hamstrings/5-Romanian Deadlift from Deficit.gif"
+import Hamstring6 from "../../assets/Hamstrings/6-Power Snatch.gif"
+import Hamstring7 from "../../assets/Hamstrings/7-power-clean.gif"
+import Hamstring8 from "../../assets/Hamstrings/8-natural Glute Ham RaiseCRRedo.gif"
+import Hamstring9 from "../../assets/Hamstrings/9-Glute ham raise.gif"
+import Hamstring10 from "../../assets/Hamstrings/10-Barbell-Deadlift.gif"
+
+
 const chestImages = [
   Chest1,
   Chest2,
