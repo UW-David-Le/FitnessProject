@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import "./ExerciseCard.scss";
 import MuscleCard from "../../components/MuscleCard/MuscleCard";
 import Chest1 from "../../assets/Chest/1-Dumbbell-Press.gif";
 import Chest2 from "../../assets/Chest/2-Forearm-Push-up.gif";
@@ -53,7 +54,7 @@ const trapsImages = [
 
 console.log(chestImages[0]);
 
-export default function ExerciseCard() {
+export default function ExerciseCard({addWorkout}) {
   const { muscle } = useParams();
   const [muscleList, setMuscleList] = useState([]);
 
@@ -75,8 +76,10 @@ export default function ExerciseCard() {
       });
   }, [muscle]);
 
+  
+
   return (
-    <div>
+    <div className="exercise-cards">
       {muscleList.map((muscleItem, index) => (
         (muscle === "chest") 
         ? 
@@ -84,12 +87,14 @@ export default function ExerciseCard() {
           image={chestImages[index]}
           title={muscleItem.name}
           description={muscleItem.instructions}
+          addWorkout = {addWorkout}
         /> 
         :
         <MuscleCard
           image={trapsImages[index]}
           title={muscleItem.name}
           description={muscleItem.instructions}
+          addWorkout = {addWorkout}
         />
       ))}
     </div>
