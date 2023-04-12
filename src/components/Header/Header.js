@@ -26,11 +26,11 @@ export default function Header() {
             <div className="header__dropdown">
               <select onClick={handleClick} className="header__navBtn">
                 <option>Exercise</option>
-                <option>Quadriceps</option>
+                <option value = "/quadriceps">Quadriceps</option>
                 <option value="/chest">Chest</option>
-                <option>LowerBack</option>
+                <option value="/lower_back">LowerBack</option>
                 <option value="/traps">Trap</option>
-                <option>Hamstrings</option>
+                <option value = "/hamstrings">Hamstrings</option>
               </select>
             </div>
           </label>

@@ -86,12 +86,57 @@ const trapsImages = [
     Trap10,
   ];
 
+  const LegImages = [
+    Leg1,
+     Leg2,
+     Leg3,
+     Leg4,
+     Leg5,
+     Leg6,
+     Leg7,
+     Leg8,
+     Leg9,
+     Leg10,
+   ];
+
+   const BackImages = [
+      Back1,
+     Back2,
+     Back3,
+     Back4,
+     Back5,
+     Back6,
+     Back7,
+     Back8,
+     Back9,
+     Back10,
+   ];
+
+   const HamstringImages = [
+    Hamstring1,
+    Hamstring2,
+    Hamstring3,
+    Hamstring4,
+    Hamstring5,
+    Hamstring6,
+    Hamstring7,
+    Hamstring8,
+    Hamstring9,
+    Hamstring10,
+   ]
+
 console.log(chestImages[0]);
 
-export default function ExerciseCard({addWorkout}) {
+
+export default function ExerciseCard() {
   const { muscle } = useParams();
   const [muscleList, setMuscleList] = useState([]);
+  const [personalList, setPersonalList] = useState([]);
 
+  const addWorkout = (list, index) => {
+    console.log(personalList)
+    setPersonalList(personalList.concat(list[index]))
+  }
   useEffect(() => {
     const api_key = "SPUBuUKj6jx/6U9l20fpSA==J1kULQQdV8bdG1OX";
     const url = `https://api.api-ninjas.com/v1/exercises?muscle=${muscle}`;
@@ -114,23 +159,34 @@ export default function ExerciseCard({addWorkout}) {
 
   return (
     <div className="exercise-cards">
-      {muscleList.map((muscleItem, index) => (
-        (muscle === "chest") 
-        ? 
-        <MuscleCard
-          image={chestImages[index]}
-          title={muscleItem.name}
-          description={muscleItem.instructions}
-          addWorkout = {addWorkout}
-        /> 
-        :
-        <MuscleCard
-          image={trapsImages[index]}
-          title={muscleItem.name}
-          description={muscleItem.instructions}
-          addWorkout = {addWorkout}
-        />
-      ))}
+      {muscleList.map((muscleItem, index) => {
+        let image, title;
+        if (muscle === "chest") {
+          image = chestImages[index];
+          title = muscleItem.name;
+        } else if (muscle === "traps") {
+          image = trapsImages[index];
+          title = muscleItem.name;
+        } else if (muscle === "quadriceps") {
+          image = LegImages[index];
+          title = muscleItem.name;
+        } else if (muscle === "lower_back") {
+          image = BackImages[index];
+          title = muscleItem.name;
+        } else {
+          image = HamstringImages[index];
+          title = muscleItem.name;
+        }
+        return (
+          <MuscleCard
+            key={index}
+            image={image}
+            title={title}
+            description={muscleItem.instructions}
+            addWorkout={() => addWorkout(muscleList,index)}
+          />
+        );
+      })}
     </div>
   );
 }

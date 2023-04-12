@@ -21,7 +21,7 @@ export default function MuscleCard({addWorkout, image, title, description }) {
         className="muscle-card__button"
         onClick={() => setShowText(!showText)}>Exercise Instructions</button>
       </div>
-      <button onClick = {() => addWorkout(title)} className="muscle-card__button">Add to workout!</button>
+      <button onClick = {addWorkout} className="muscle-card__button">Add to workout!</button>
     </div>
     <div className></div>
     {showText && 
